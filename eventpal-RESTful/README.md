@@ -1,12 +1,12 @@
 get all events with offset&count: GET http://sherafgan.me/eventpal-api/v1/events?offset=_OFFSET_HERE_&count=_COUNT_HERE_
 
-get book with ID: GET http://sherafgan.me/eventpal-api/v1/events/_ID_HERE_
+get event with ID: GET http://sherafgan.me/eventpal-api/v1/events/_ID_HERE_
 
-add new book: PUT http://sherafgan.me/eventpal-api/v1/events/ see EX1
+add new event: PUT http://sherafgan.me/eventpal-api/v1/events/ see EX1
 
-delete book with ID: DELETE http://sherafgan.me/eventpal-api/v1/events/_ID_HERE_
+delete event with ID: DELETE http://sherafgan.me/eventpal-api/v1/events/_ID_HERE_
 
-delete all books: DELETE http://sherafgan.me/eventpal-api/v1/events/
+delete all events: DELETE http://sherafgan.me/eventpal-api/v1/events/
 
 
 EX1: example of http body (json object):
