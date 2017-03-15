@@ -2,7 +2,7 @@ get all events with offset&count: GET http://sherafgan.me/eventpal-api/v1/events
 
 get event with ID: GET http://sherafgan.me/eventpal-api/v1/events/_ID_HERE_
 
-add new event: PUT http://sherafgan.me/eventpal-api/v1/events/ see EX1
+add new event: PUT http://sherafgan.me/eventpal-api/v1/events/ with json body as in EX1
 
 delete event with ID: DELETE http://sherafgan.me/eventpal-api/v1/events/_ID_HERE_
 
