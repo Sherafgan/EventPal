@@ -10,6 +10,7 @@ delete all events: DELETE http://sherafgan.me/eventpal-api/v1/events/
 
 
 EX1: example of http body (json object):
+```json
 {
 	"name":"EventName",
 	"title":"EventDescription",
@@ -17,3 +18,4 @@ EX1: example of http body (json object):
 	"latitude":3123.12312,
 	"longitude":123.1212
 }
+```
