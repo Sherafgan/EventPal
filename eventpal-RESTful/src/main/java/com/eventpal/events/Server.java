@@ -1,5 +1,7 @@
 package com.eventpal.events;
 
+import org.apache.log4j.BasicConfigurator;
+import org.apache.log4j.Logger;
 import org.glassfish.grizzly.http.server.HttpHandler;
 import org.glassfish.grizzly.http.server.HttpServer;
 import org.glassfish.grizzly.http.server.StaticHttpHandler;
@@ -17,6 +19,10 @@ public class Server {
     }
 
     public static void main(String[] args) throws Exception {
+        Logger logger = Logger.getLogger(Server.class);
+        BasicConfigurator.configure();
+        logger.info("First log4j's statement");
+
         Server server = new Server();
         final HttpServer httpServer = server.startServer();
         System.out.println("Press enter to stop the server...");

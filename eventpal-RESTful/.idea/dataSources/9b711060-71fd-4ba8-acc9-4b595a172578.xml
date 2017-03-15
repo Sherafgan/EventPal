@@ -9,8 +9,8 @@
     </database>
     <schema id="3" parent="2" name="public">
       <ObjectId>2200</ObjectId>
-      <IntrospectionTimestamp>2017-03-14.21:14:05.915</IntrospectionTimestamp>
-      <IntrospectionStateNumber>941</IntrospectionStateNumber>
+      <IntrospectionTimestamp>2017-03-15.21:37:05.619</IntrospectionTimestamp>
+      <IntrospectionStateNumber>980</IntrospectionStateNumber>
       <Current>1</Current>
       <Visible>1</Visible>
     </schema>
@@ -30,57 +30,57 @@
       <ObjectId>12121</ObjectId>
     </schema>
     <sequence id="9" parent="3" name="hibernate_sequence">
-      <ObjectId>16957</ObjectId>
-      <StateNumber>941</StateNumber>
+      <ObjectId>17029</ObjectId>
+      <StateNumber>980</StateNumber>
       <SequenceIdentity>1</SequenceIdentity>
     </sequence>
     <table id="10" parent="3" name="event">
-      <ObjectId>16949</ObjectId>
-      <StateNumber>940</StateNumber>
+      <ObjectId>17021</ObjectId>
+      <StateNumber>979</StateNumber>
     </table>
     <column id="11" parent="10" name="id">
       <Position>1</Position>
       <DataType>integer|0</DataType>
       <NotNull>1</NotNull>
-      <StateNumber>940</StateNumber>
+      <StateNumber>979</StateNumber>
     </column>
     <column id="12" parent="10" name="author">
       <Position>2</Position>
       <DataType>varchar(255)|0</DataType>
-      <StateNumber>940</StateNumber>
+      <StateNumber>979</StateNumber>
     </column>
     <column id="13" parent="10" name="description">
       <Position>3</Position>
       <DataType>varchar(255)|0</DataType>
-      <StateNumber>940</StateNumber>
+      <StateNumber>979</StateNumber>
     </column>
     <column id="14" parent="10" name="latitude">
       <Position>4</Position>
       <DataType>double precision|0</DataType>
-      <StateNumber>940</StateNumber>
+      <StateNumber>979</StateNumber>
     </column>
     <column id="15" parent="10" name="link">
       <Position>5</Position>
       <DataType>varchar(255)|0</DataType>
-      <StateNumber>940</StateNumber>
+      <StateNumber>979</StateNumber>
     </column>
     <column id="16" parent="10" name="longitude">
       <Position>6</Position>
       <DataType>double precision|0</DataType>
-      <StateNumber>940</StateNumber>
+      <StateNumber>979</StateNumber>
     </column>
     <column id="17" parent="10" name="name">
       <Position>7</Position>
       <DataType>varchar(255)|0</DataType>
-      <StateNumber>940</StateNumber>
+      <StateNumber>979</StateNumber>
     </column>
     <index id="18" parent="10" name="event_pkey">
-      <ObjectId>16955</ObjectId>
+      <ObjectId>17027</ObjectId>
       <ColNames>id</ColNames>
       <Unique>1</Unique>
     </index>
     <key id="19" parent="10" name="event_pkey">
-      <ObjectId>16956</ObjectId>
+      <ObjectId>17028</ObjectId>
       <ColNames>id</ColNames>
       <UnderlyingIndexName>event_pkey</UnderlyingIndexName>
       <Primary>1</Primary>

@@ -42,6 +42,7 @@ public class EventApi {
         return new ObjectMapper().writeValueAsString(event);
     }
 
+
     @PUT
     @JSONP(queryParam = "callback")
     public void putEvent(String eventJson) throws Exception {
