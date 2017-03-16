@@ -1,3 +1,6 @@
+### Status
+[![Build Status](https://travis-ci.com/Sherafgan/eventpal-RESTful.svg?token=TtzuqDhEG7q2DHFCzAq5&branch=master)](https://travis-ci.com/Sherafgan/eventpal-RESTful)
+
 get all events with offset&count: GET http://sherafgan.me/eventpal-api/v1/events?offset=_OFFSET_HERE_&count=_COUNT_HERE_
 
 get event with ID: GET http://sherafgan.me/eventpal-api/v1/events/_ID_HERE_
