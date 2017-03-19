@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">EventPal</string>
+
+    <!--Add Event activity-->
+    <string name="add_event">Add Event</string>
+    <string name="event_name">Name</string>
+    <string name="event_description">Description</string>
+    <string name="event_location">Location</string>
+    <string name="event_creation_next_button">NEXT</string>
+    <string name="event_creator">Event owner</string>
+    <string name="event_creation_confirm">Create</string>
+</resources>

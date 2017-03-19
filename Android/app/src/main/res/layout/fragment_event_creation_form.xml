@@ -1,0 +1,61 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="android.eventpal.EventCreationForm">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+       <TextView
+           android:id="@+id/tvEventName"
+           android:text="@string/event_name"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <EditText
+           android:id="@+id/etEventName"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/tvEventDescription"
+           android:text="@string/event_description"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tvEventName"/>
+
+       <EditText
+           android:id="@+id/etEventDescription"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+       <TextView
+           android:id="@+id/tvEventLocation"
+           android:text="@string/event_location"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/tvEventDescription"/>
+
+       <EditText
+           android:id="@+id/etEventLocation"
+           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content" />
+
+       <Button
+           android:id="@+id/button"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_centerHorizontal="true"
+           android:layout_marginBottom="41dp"
+           android:text="@string/event_creation_next_button" />
+
+
+   </RelativeLayout>
+
+</FrameLayout>
