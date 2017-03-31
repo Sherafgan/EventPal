@@ -1,0 +1,25 @@
+PODS:
+  - GoogleMaps (2.1.1):
+    - GoogleMaps/Maps (= 2.1.1)
+  - GoogleMaps/Base (2.1.1)
+  - GoogleMaps/Maps (2.1.1):
+    - GoogleMaps/Base
+  - GooglePlaces (2.1.1):
+    - GoogleMaps/Base (= 2.1.1)
+  - Realm (2.3.0):
+    - Realm/Headers (= 2.3.0)
+  - Realm/Headers (2.3.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - GooglePlaces
+  - Realm
+
+SPEC CHECKSUMS:
+  GoogleMaps: a5b5bbe47734e2443bde781a6aa64e69fdb6d785
+  GooglePlaces: 35636d86e5020cba3856eb988c09a5491de0a65a
+  Realm: 69d7de9aa569a11eed490aaabc8f2109e3985ecf
+
+PODFILE CHECKSUM: 70ebce46560d510c33d583381344bd89839c68b3
+
+COCOAPODS: 1.0.1
