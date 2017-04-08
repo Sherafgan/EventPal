@@ -266,16 +266,18 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fh2-ED-BSs">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fh2-ED-BSs">
                                 <rect key="frame" x="313" y="25" width="46" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="Fh2-ED-BSs" secondAttribute="height" multiplier="1:1" id="CXD-WW-nCl"/>
                                     <constraint firstAttribute="width" constant="46" id="Q4x-0y-s7W"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <state key="normal" title="+">
+                                <state key="normal" image="Event">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="createButtonTapped:" destination="lxh-OT-cA4" eventType="touchUpInside" id="0Nf-bh-nVL"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.92941176469999998" green="0.75686274509999996" blue="0.1764705882" alpha="1" colorSpace="calibratedRGB"/>
@@ -300,6 +302,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Event" width="50" height="50"/>
         <image name="New-York-Street" width="2509" height="1673"/>
         <image name="Preferences_back" width="882" height="1474"/>
     </resources>
