@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0F2168603575C6F9E57605DE /* Pods_EventPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA75583AAFC43B7912DA7559 /* Pods_EventPal.framework */; };
+		3DAF3B981E8C1472005843F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3B971E8C1472005843F8 /* main.m */; };
+		3DAF3B9B1E8C1472005843F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3B9A1E8C1472005843F8 /* AppDelegate.m */; };
+		3DAF3BA11E8C1472005843F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF3B9F1E8C1472005843F8 /* Main.storyboard */; };
+		3DAF3BA31E8C1472005843F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF3BA21E8C1472005843F8 /* Assets.xcassets */; };
+		3DAF3BA61E8C1472005843F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF3BA41E8C1472005843F8 /* LaunchScreen.storyboard */; };
+		3DAF3BB01E8C15EC005843F8 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3BAF1E8C15EC005843F8 /* MapViewController.m */; };
+		3DAF3BB41E8C27FA005843F8 /* Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3BB31E8C27FA005843F8 /* Location.m */; };
+		3DAF3BB81E8C2858005843F8 /* Event.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3BB71E8C2858005843F8 /* Event.m */; };
+		3DAF3BBC1E8C2997005843F8 /* DatabaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3BBB1E8C2997005843F8 /* DatabaseManager.m */; };
+		3DAF3BC01E8C2B1E005843F8 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3BBF1E8C2B1E005843F8 /* LoginViewController.m */; };
+		3DAF3BC41E8C2C3D005843F8 /* PreferencesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3BC31E8C2C3D005843F8 /* PreferencesViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3DAF3B931E8C1472005843F8 /* EventPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3DAF3B971E8C1472005843F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3DAF3B991E8C1472005843F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3DAF3B9A1E8C1472005843F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3DAF3BA01E8C1472005843F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3DAF3BA21E8C1472005843F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3DAF3BA51E8C1472005843F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3DAF3BA71E8C1472005843F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DAF3BAE1E8C15EC005843F8 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MapViewController.h; path = MapViewController/MapViewController.h; sourceTree = "<group>"; };
+		3DAF3BAF1E8C15EC005843F8 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MapViewController.m; path = MapViewController/MapViewController.m; sourceTree = "<group>"; };
+		3DAF3BB21E8C27FA005843F8 /* Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Location.h; sourceTree = "<group>"; };
+		3DAF3BB31E8C27FA005843F8 /* Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Location.m; sourceTree = "<group>"; };
+		3DAF3BB61E8C2858005843F8 /* Event.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Event.h; sourceTree = "<group>"; };
+		3DAF3BB71E8C2858005843F8 /* Event.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Event.m; sourceTree = "<group>"; };
+		3DAF3BBA1E8C2997005843F8 /* DatabaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatabaseManager.h; sourceTree = "<group>"; };
+		3DAF3BBB1E8C2997005843F8 /* DatabaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatabaseManager.m; sourceTree = "<group>"; };
+		3DAF3BBE1E8C2B1E005843F8 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		3DAF3BBF1E8C2B1E005843F8 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		3DAF3BC21E8C2C3D005843F8 /* PreferencesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreferencesViewController.h; sourceTree = "<group>"; };
+		3DAF3BC31E8C2C3D005843F8 /* PreferencesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreferencesViewController.m; sourceTree = "<group>"; };
+		AA4ADF59042510C0A6151AB9 /* Pods-EventPal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventPal.release.xcconfig"; path = "Pods/Target Support Files/Pods-EventPal/Pods-EventPal.release.xcconfig"; sourceTree = "<group>"; };
+		AA75583AAFC43B7912DA7559 /* Pods_EventPal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventPal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBBD56DE264A5EC1169FDB89 /* Pods-EventPal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventPal.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventPal/Pods-EventPal.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3DAF3B901E8C1472005843F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F2168603575C6F9E57605DE /* Pods_EventPal.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0014C74C58E4431EE8F0C012 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA75583AAFC43B7912DA7559 /* Pods_EventPal.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3DAF3B8A1E8C1472005843F8 = {
+			isa = PBXGroup;
+			children = (
+				3DAF3B951E8C1472005843F8 /* EventPal */,
+				3DAF3B941E8C1472005843F8 /* Products */,
+				E423AB6A7A96C3A84BA0B56D /* Pods */,
+				0014C74C58E4431EE8F0C012 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3DAF3B941E8C1472005843F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3B931E8C1472005843F8 /* EventPal.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3DAF3B951E8C1472005843F8 /* EventPal */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3BC11E8C2B8E005843F8 /* PreferencesViewController */,
+				3DAF3BBD1E8C2AFD005843F8 /* LoginViewController */,
+				3DAF3BB91E8C2984005843F8 /* DatabaseManager */,
+				3DAF3BB51E8C284B005843F8 /* Event */,
+				3DAF3BB11E8C27E2005843F8 /* Location */,
+				3DAF3BAD1E8C15B9005843F8 /* MapViewController */,
+				3DAF3B991E8C1472005843F8 /* AppDelegate.h */,
+				3DAF3B9A1E8C1472005843F8 /* AppDelegate.m */,
+				3DAF3B9F1E8C1472005843F8 /* Main.storyboard */,
+				3DAF3BA21E8C1472005843F8 /* Assets.xcassets */,
+				3DAF3BA41E8C1472005843F8 /* LaunchScreen.storyboard */,
+				3DAF3BA71E8C1472005843F8 /* Info.plist */,
+				3DAF3B961E8C1472005843F8 /* Supporting Files */,
+			);
+			path = EventPal;
+			sourceTree = "<group>";
+		};
+		3DAF3B961E8C1472005843F8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3B971E8C1472005843F8 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3DAF3BAD1E8C15B9005843F8 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3BAE1E8C15EC005843F8 /* MapViewController.h */,
+				3DAF3BAF1E8C15EC005843F8 /* MapViewController.m */,
+			);
+			name = MapViewController;
+			sourceTree = "<group>";
+		};
+		3DAF3BB11E8C27E2005843F8 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3BB21E8C27FA005843F8 /* Location.h */,
+				3DAF3BB31E8C27FA005843F8 /* Location.m */,
+			);
+			name = Location;
+			sourceTree = "<group>";
+		};
+		3DAF3BB51E8C284B005843F8 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3BB61E8C2858005843F8 /* Event.h */,
+				3DAF3BB71E8C2858005843F8 /* Event.m */,
+			);
+			name = Event;
+			sourceTree = "<group>";
+		};
+		3DAF3BB91E8C2984005843F8 /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3BBA1E8C2997005843F8 /* DatabaseManager.h */,
+				3DAF3BBB1E8C2997005843F8 /* DatabaseManager.m */,
+			);
+			name = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		3DAF3BBD1E8C2AFD005843F8 /* LoginViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3BBE1E8C2B1E005843F8 /* LoginViewController.h */,
+				3DAF3BBF1E8C2B1E005843F8 /* LoginViewController.m */,
+			);
+			name = LoginViewController;
+			sourceTree = "<group>";
+		};
+		3DAF3BC11E8C2B8E005843F8 /* PreferencesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3DAF3BC21E8C2C3D005843F8 /* PreferencesViewController.h */,
+				3DAF3BC31E8C2C3D005843F8 /* PreferencesViewController.m */,
+			);
+			name = PreferencesViewController;
+			sourceTree = "<group>";
+		};
+		E423AB6A7A96C3A84BA0B56D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBBD56DE264A5EC1169FDB89 /* Pods-EventPal.debug.xcconfig */,
+				AA4ADF59042510C0A6151AB9 /* Pods-EventPal.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3DAF3B921E8C1472005843F8 /* EventPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3DAF3BAA1E8C1472005843F8 /* Build configuration list for PBXNativeTarget "EventPal" */;
+			buildPhases = (
+				4081AA9E310DF9B87BD6D4BE /* [CP] Check Pods Manifest.lock */,
+				3DAF3B8F1E8C1472005843F8 /* Sources */,
+				3DAF3B901E8C1472005843F8 /* Frameworks */,
+				3DAF3B911E8C1472005843F8 /* Resources */,
+				0EF18D1819E7F76E1A5C1A52 /* [CP] Embed Pods Frameworks */,
+				3DE3393C77D479CB7E4FA681 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EventPal;
+			productName = EventPal;
+			productReference = 3DAF3B931E8C1472005843F8 /* EventPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3DAF3B8B1E8C1472005843F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Yanislav Kononov";
+				TargetAttributes = {
+					3DAF3B921E8C1472005843F8 = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = MCB6AYLM4B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3DAF3B8E1E8C1472005843F8 /* Build configuration list for PBXProject "EventPal" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3DAF3B8A1E8C1472005843F8;
+			productRefGroup = 3DAF3B941E8C1472005843F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3DAF3B921E8C1472005843F8 /* EventPal */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3DAF3B911E8C1472005843F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAF3BA61E8C1472005843F8 /* LaunchScreen.storyboard in Resources */,
+				3DAF3BA31E8C1472005843F8 /* Assets.xcassets in Resources */,
+				3DAF3BA11E8C1472005843F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EF18D1819E7F76E1A5C1A52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventPal/Pods-EventPal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DE3393C77D479CB7E4FA681 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EventPal/Pods-EventPal-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4081AA9E310DF9B87BD6D4BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3DAF3B8F1E8C1472005843F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DAF3BB01E8C15EC005843F8 /* MapViewController.m in Sources */,
+				3DAF3B9B1E8C1472005843F8 /* AppDelegate.m in Sources */,
+				3DAF3BB81E8C2858005843F8 /* Event.m in Sources */,
+				3DAF3BB41E8C27FA005843F8 /* Location.m in Sources */,
+				3DAF3BC01E8C2B1E005843F8 /* LoginViewController.m in Sources */,
+				3DAF3BBC1E8C2997005843F8 /* DatabaseManager.m in Sources */,
+				3DAF3B981E8C1472005843F8 /* main.m in Sources */,
+				3DAF3BC41E8C2C3D005843F8 /* PreferencesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3DAF3B9F1E8C1472005843F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAF3BA01E8C1472005843F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3DAF3BA41E8C1472005843F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3DAF3BA51E8C1472005843F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3DAF3BA81E8C1472005843F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3DAF3BA91E8C1472005843F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3DAF3BAB1E8C1472005843F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBBD56DE264A5EC1169FDB89 /* Pods-EventPal.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MCB6AYLM4B;
+				INFOPLIST_FILE = EventPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jan.Global-Grocery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3DAF3BAC1E8C1472005843F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA4ADF59042510C0A6151AB9 /* Pods-EventPal.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = MCB6AYLM4B;
+				INFOPLIST_FILE = EventPal/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Jan.Global-Grocery";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3DAF3B8E1E8C1472005843F8 /* Build configuration list for PBXProject "EventPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAF3BA81E8C1472005843F8 /* Debug */,
+				3DAF3BA91E8C1472005843F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3DAF3BAA1E8C1472005843F8 /* Build configuration list for PBXNativeTarget "EventPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3DAF3BAB1E8C1472005843F8 /* Debug */,
+				3DAF3BAC1E8C1472005843F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3DAF3B8B1E8C1472005843F8 /* Project object */;
+}
