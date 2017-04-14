@@ -30,6 +30,24 @@
     [realm addOrUpdateObject:object];
     [realm commitWriteTransaction];
 }
+
++ (void)deleteInstance:(nonnull RLMObject *)object // wrapped writeTransaction method
+{
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    [realm deleteObject:object];
+    [realm commitWriteTransaction];
+}
+
++ (void)createOrUpdate:(nonnull RLMObject *)object // wrapped writeTransaction method
+{
+    RLMRealm *realm = [RLMRealm defaultRealm];
+    [realm beginWriteTransaction];
+    [realm addOrUpdateObject:object];
+    [realm commitWriteTransaction];
+}
+
+
 - ( RLMResults<Event*>* _Nullable )getEvents
 {
     return [Event allObjects];
@@ -86,6 +104,11 @@
 {
     //set here sort/search criterias that you want to see at the start
     
+}
+
+
++(void) createOrUpdateEvent:(Event*) event{
+    [self createOrUpdate:event];
 }
 
 - (void)cleanDatabase

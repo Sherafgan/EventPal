@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0F2168603575C6F9E57605DE /* Pods_EventPal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA75583AAFC43B7912DA7559 /* Pods_EventPal.framework */; };
+		3D1590F51E98B7560087FF98 /* EventCreationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1590F41E98B7560087FF98 /* EventCreationViewController.m */; };
+		3D1590F91E98B77D0087FF98 /* EventsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1590F81E98B77D0087FF98 /* EventsViewController.m */; };
+		3D1591091E9A25B40087FF98 /* EventTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 3D1591081E9A25B40087FF98 /* EventTableViewCell.m */; };
 		3DAF3B981E8C1472005843F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3B971E8C1472005843F8 /* main.m */; };
 		3DAF3B9B1E8C1472005843F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DAF3B9A1E8C1472005843F8 /* AppDelegate.m */; };
 		3DAF3BA11E8C1472005843F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3DAF3B9F1E8C1472005843F8 /* Main.storyboard */; };
@@ -22,6 +25,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3D1590F31E98B7560087FF98 /* EventCreationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventCreationViewController.h; sourceTree = "<group>"; };
+		3D1590F41E98B7560087FF98 /* EventCreationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventCreationViewController.m; sourceTree = "<group>"; };
+		3D1590F71E98B77D0087FF98 /* EventsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventsViewController.h; sourceTree = "<group>"; };
+		3D1590F81E98B77D0087FF98 /* EventsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventsViewController.m; sourceTree = "<group>"; };
+		3D1591071E9A25B40087FF98 /* EventTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EventTableViewCell.h; sourceTree = "<group>"; };
+		3D1591081E9A25B40087FF98 /* EventTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EventTableViewCell.m; sourceTree = "<group>"; };
 		3DAF3B931E8C1472005843F8 /* EventPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EventPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3DAF3B971E8C1472005843F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3DAF3B991E8C1472005843F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -67,6 +76,41 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		3D1590F21E98B7340087FF98 /* EventCreationViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D1590F31E98B7560087FF98 /* EventCreationViewController.h */,
+				3D1590F41E98B7560087FF98 /* EventCreationViewController.m */,
+			);
+			name = EventCreationViewController;
+			sourceTree = "<group>";
+		};
+		3D1590F61E98B7660087FF98 /* EventsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3D1590F71E98B77D0087FF98 /* EventsViewController.h */,
+				3D1590F81E98B77D0087FF98 /* EventsViewController.m */,
+			);
+			name = EventsViewController;
+			sourceTree = "<group>";
+		};
+		3D1591051E9A25900087FF98 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				3D1591061E9A25970087FF98 /* EventCell */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		3D1591061E9A25970087FF98 /* EventCell */ = {
+			isa = PBXGroup;
+			children = (
+				3D1591071E9A25B40087FF98 /* EventTableViewCell.h */,
+				3D1591081E9A25B40087FF98 /* EventTableViewCell.m */,
+			);
+			name = EventCell;
+			sourceTree = "<group>";
+		};
 		3DAF3B8A1E8C1472005843F8 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +132,9 @@
 		3DAF3B951E8C1472005843F8 /* EventPal */ = {
 			isa = PBXGroup;
 			children = (
+				3D1591051E9A25900087FF98 /* Cells */,
+				3D1590F61E98B7660087FF98 /* EventsViewController */,
+				3D1590F21E98B7340087FF98 /* EventCreationViewController */,
 				3DAF3BC11E8C2B8E005843F8 /* PreferencesViewController */,
 				3DAF3BBD1E8C2AFD005843F8 /* LoginViewController */,
 				3DAF3BB91E8C2984005843F8 /* DatabaseManager */,
@@ -300,8 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3DAF3BB01E8C15EC005843F8 /* MapViewController.m in Sources */,
+				3D1590F91E98B77D0087FF98 /* EventsViewController.m in Sources */,
 				3DAF3B9B1E8C1472005843F8 /* AppDelegate.m in Sources */,
 				3DAF3BB81E8C2858005843F8 /* Event.m in Sources */,
+				3D1590F51E98B7560087FF98 /* EventCreationViewController.m in Sources */,
+				3D1591091E9A25B40087FF98 /* EventTableViewCell.m in Sources */,
 				3DAF3BB41E8C27FA005843F8 /* Location.m in Sources */,
 				3DAF3BC01E8C2B1E005843F8 /* LoginViewController.m in Sources */,
 				3DAF3BBC1E8C2997005843F8 /* DatabaseManager.m in Sources */,
