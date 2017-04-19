@@ -7,25 +7,25 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.TextView;
 
 
-/**
- * A simple {@link Fragment} subclass.
- * Activities that contain this fragment must implement the
- * {@link EventCreationConfirmation.OnFragmentInteractionListener} interface
- * to handle interaction events.
- * Use the {@link EventCreationConfirmation#newInstance} factory method to
- * create an instance of this fragment.
- */
-public class EventCreationConfirmation extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    private static final String ARG_PARAM1 = "param1";
-    private static final String ARG_PARAM2 = "param2";
+public class EventCreationConfirmation extends Fragment implements View.OnClickListener {
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+
+    private static final String ARG_NAME = "eventName";
+    private static final String ARG_TITLE = "eventTitle";
+    private static final String ARG_AUTHOR = "eventAuthor";
+    private static final String ARG_LOCATION = "eventLocation";
+
+    private String mEventName;
+    private String mEventTitle;
+    private String mEventAuthor;
+    private String mEventLocation;
+
+    private TextView tvName,tvTitle,tvLocation,tvAuthor;
+    private Button bConfirm,bCancel;
 
     private OnFragmentInteractionListener mListener;
 
@@ -33,20 +33,15 @@ public class EventCreationConfirmation extends Fragment {
         // Required empty public constructor
     }
 
-    /**
-     * Use this factory method to create a new instance of
-     * this fragment using the provided parameters.
-     *
-     * @param param1 Parameter 1.
-     * @param param2 Parameter 2.
-     * @return A new instance of fragment EventCreationConfirmation.
-     */
-    // TODO: Rename and change types and number of parameters
-    public static EventCreationConfirmation newInstance(String param1, String param2) {
+
+    public static EventCreationConfirmation newInstance(String param1, String param2,String param3,
+                                                        String param4) {
         EventCreationConfirmation fragment = new EventCreationConfirmation();
         Bundle args = new Bundle();
-        args.putString(ARG_PARAM1, param1);
-        args.putString(ARG_PARAM2, param2);
+        args.putString(ARG_NAME, param1);
+        args.putString(ARG_TITLE, param2);
+        args.putString(ARG_AUTHOR, param3);
+        args.putString(ARG_LOCATION, param4);
         fragment.setArguments(args);
         return fragment;
     }
@@ -55,8 +50,10 @@ public class EventCreationConfirmation extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            mEventName = getArguments().getString(ARG_NAME);
+            mEventName= getArguments().getString(ARG_TITLE);
+            mEventAuthor =getArguments().getString(ARG_AUTHOR);
+            mEventTitle=getArguments().getString(ARG_TITLE);
         }
     }
 
@@ -64,7 +61,17 @@ public class EventCreationConfirmation extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_event_creation_confirmation, container, false);
+        View v =inflater.inflate(R.layout.fragment_event_creation_confirmation, container, false);
+        tvAuthor=(TextView)v.findViewById(R.id.tvEventAuthorConfirmation);
+        tvLocation=(TextView)v.findViewById(R.id.tvEventLocationConfirmation);
+        tvName=(TextView)v.findViewById(R.id.tvEventNameConfirmation);
+        tvTitle=(TextView)v.findViewById(R.id.tvEventDescriptionConfirmation);
+        bCancel=(Button)v.findViewById(R.id.bEdit);
+        bConfirm=(Button)v.findViewById(R.id.bConfirm);
+        bCancel.setOnClickListener(this);
+        bConfirm.setOnClickListener(this);
+        setTextFields();
+        return  v;
     }
 
     // TODO: Rename method, update argument and hook method into UI event
@@ -89,6 +96,29 @@ public class EventCreationConfirmation extends Fragment {
     public void onDetach() {
         super.onDetach();
         mListener = null;
+    }
+
+    @Override
+    public void onClick(View v) {
+        if (v.getId()==R.id.bConfirm){
+           sendToServer();
+        }else {
+            //TODO: load back the form
+        }
+    }
+
+
+
+    private void setTextFields(){
+        tvTitle.setText(mEventTitle);
+        tvName.setText(mEventName);
+        tvLocation.setText(mEventLocation);
+        tvAuthor.setText(mEventAuthor);
+
+    }
+
+    private void sendToServer( ){
+
     }
 
     /**

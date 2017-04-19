@@ -19,5 +19,6 @@
 - ( RLMResults<Event*>* _Nullable )getEvents;
 - (void) updateDatabase;
 - (void)cleanDatabase;
-
++(void) createOrUpdateEvent:(Event*_Nonnull) event;
++ (void)deleteInstance:(nonnull RLMObject *)object;
 @end

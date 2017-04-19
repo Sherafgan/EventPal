@@ -4,58 +4,94 @@
     android:layout_height="match_parent"
     tools:context="android.eventpal.EventCreationForm">
 
-   <RelativeLayout
-       android:layout_width="match_parent"
-       android:layout_height="match_parent">
-       <TextView
-           android:id="@+id/tvEventName"
-           android:text="@string/event_name"
-           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-       <EditText
-           android:id="@+id/etEventName"
-           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content" />
-       <TextView
-           android:id="@+id/tvEventDescription"
-           android:text="@string/event_description"
-           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_below="@id/tvEventName"/>
+        <TextView
+            android:id="@+id/tvEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/event_name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_alignTop="@+id/etEventName"
+            android:layout_alignStart="@+id/tvEventDescription" />
 
-       <EditText
-           android:id="@+id/etEventDescription"
-           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content" />
-       <TextView
-           android:id="@+id/tvEventLocation"
-           android:text="@string/event_location"
-           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_below="@id/tvEventDescription"/>
+        <EditText
+            android:id="@+id/etEventName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/etEventLocation"
+            android:layout_marginTop="55dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
 
-       <EditText
-           android:id="@+id/etEventLocation"
-           android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/tvEventDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:text="@string/event_description"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_below="@+id/etEventName"
+            android:layout_alignStart="@+id/tvEventAuthor" />
 
-       <Button
-           android:id="@+id/button"
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:layout_alignParentBottom="true"
-           android:layout_centerHorizontal="true"
-           android:layout_marginBottom="41dp"
-           android:text="@string/event_creation_next_button" />
+        <EditText
+            android:id="@+id/etEventDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etEventLocation"
+            android:layout_alignTop="@+id/tvEventLocation"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/tvEventAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:text="@string/event_creator"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_below="@+id/etEventLocation"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="13dp" />
+
+        <EditText
+            android:id="@+id/etEventAuthor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etEventDescription"
+            android:layout_alignTop="@+id/tvEventAuthor"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        <TextView
+            android:id="@+id/tvEventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/event_location"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+            android:layout_below="@+id/etEventAuthor"
+            android:layout_alignStart="@+id/tvEventAuthor" />
+
+        <EditText
+            android:id="@+id/etEventLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/bNext"
+            android:layout_alignTop="@+id/tvEventDescription"
+            android:layout_marginEnd="22dp"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2" />
+
+        <Button
+            android:id="@+id/bNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="41dp"
+            android:text="@string/event_creation_next_button" />
 
 
-   </RelativeLayout>
+    </RelativeLayout>
 
 </FrameLayout>
