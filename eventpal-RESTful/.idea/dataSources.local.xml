@@ -7,8 +7,9 @@
       </database-info>
       <case-sensitivity plain-identifiers="lower" quoted-identifiers="exact" />
       <user-name>postgres</user-name>
-      <user-password>dfdadfc5dfd9dfdedfcddfd8dfcfdfd9</user-password>
+      <introspection-schemas>eventpal:public</introspection-schemas>
       <resolve-scope>eventpal:postgres,public</resolve-scope>
+      <unqualified-resolve-schemas>eventpal:postgres,public</unqualified-resolve-schemas>
     </data-source>
   </component>
 </project>
